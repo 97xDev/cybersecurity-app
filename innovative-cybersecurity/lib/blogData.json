@@ -12,7 +12,8 @@
       "AI Security",
       "Cloud Security",
       "IoT Security"
-    ]
+    ],
+    "date": "Januray 12, 2025"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
       "Business Security",
       "Data Protection",
       "Endpoint Security"
-    ]
+    ],
+    "date": "Januray 19, 2025"
   },
   {
     "id": 3,
@@ -42,6 +44,7 @@
       "Data Protection",
       "Personal Security",
       "Digital Safety"
-    ]
+    ],
+    "date": "Januray 22, 2025"
   }
 ]

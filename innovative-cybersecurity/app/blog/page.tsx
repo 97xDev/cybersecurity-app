@@ -34,7 +34,7 @@ export default function Blog() {
           <ul className="mt-4 space-y-2">
             {newPosts.map((post) => (
               <li key={post.id}>
-                <span className="text-gray-500 text-sm">Post Date</span>
+                <span className="text-gray-500 text-sm">{post.date}</span>
                 <Link
                   href={"/blog/" + post.slug}
                   className="block text-blue-600 hover:underline"
