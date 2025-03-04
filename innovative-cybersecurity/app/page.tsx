@@ -18,7 +18,7 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="mt-6 inline-block bg-indigo-500 text-slate-200 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-600 transition"
+              className="mt-6 inline-block bg-indigo-500 text-slate-200 font-semibold px-6 py-3  hover:bg-indigo-600 transition"
             >
               Get Started
             </Link>
@@ -29,7 +29,7 @@ export default function Home() {
               alt="Cybersecurity"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg"
+              className=" shadow-lg"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-6">
-            <div className="bg-slate-200 p-6 rounded-lg shadow-md">
+            <div className="bg-slate-200 p-6  shadow-md">
               <h3 className="text-xl font-semibold">
                 Advanced Threat Detection
               </h3>
@@ -62,13 +62,13 @@ export default function Home() {
                 business.
               </p>
             </div>
-            <div className="bg-slate-200 p-6 rounded-lg shadow-md">
+            <div className="bg-slate-200 p-6  shadow-md">
               <h3 className="text-xl font-semibold">24/7 Monitoring</h3>
               <p className="text-slate-600 mt-2">
                 Continuous surveillance to safeguard your data around the clock.
               </p>
             </div>
-            <div className="bg-slate-200 p-6 rounded-lg shadow-md">
+            <div className="bg-slate-200 p-6  shadow-md">
               <h3 className="text-xl font-semibold">Data Encryption</h3>
               <p className="text-slate-600 mt-2">
                 Secure sensitive information with industry-leading encryption
@@ -93,14 +93,14 @@ export default function Home() {
               <Link
                 key={post.id}
                 href={"/blog/" + post.slug}
-                className="group flex flex-col bg-slate-100 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 cursor-pointer"
+                className="group flex flex-col bg-slate-100  shadow-md overflow-hidden transition-transform transform hover:scale-105 cursor-pointer"
               >
                 <Image
                   src={post.image}
                   alt={post.title}
                   width={600}
                   height={300}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
                   <h3 className="text-xl leading-[1.2] font-semibold group-hover:text-indigo-500 transition-colors">
@@ -113,14 +113,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 py-10 text-center">
-        <p>
-          &copy; {new Date().getFullYear()} CyberSecure Inc. All Rights
-          Reserved.
-        </p>
-      </footer>
     </div>
   );
 }

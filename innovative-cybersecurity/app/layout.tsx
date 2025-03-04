@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -8,9 +9,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-200 min-h-screen">
-        <Navbar />
+      <body className="bg-slate-100 text-gray-200 min-h-screen">
+        <Header />
         <main className="w-full">{children}</main>
+        <Footer />
       </body>
     </html>
   );
