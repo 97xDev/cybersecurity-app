@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 py-10">
@@ -17,19 +19,19 @@ export default function Footer() {
             <h3 className="text-white font-semibold">Company</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="/solutions" className="hover:text-white transition">
+                <Link href="/solutions" className="hover:text-white transition">
                   Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/careers" className="hover:text-white transition">
+                <Link href="/careers" className="hover:text-white transition">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-white transition">
+                <Link href="/contact" className="hover:text-white transition">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -37,19 +39,22 @@ export default function Footer() {
             <h3 className="text-white font-semibold">Resources</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="/blog" className="hover:text-white transition">
+                <Link href="/blog" className="hover:text-white transition">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/case-studies" className="hover:text-white transition">
+                <Link
+                  href="/case-studies"
+                  className="hover:text-white transition"
+                >
                   Case Studies
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faqs" className="hover:text-white transition">
+                <Link href="/faqs" className="hover:text-white transition">
                   FAQs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -57,25 +62,25 @@ export default function Footer() {
             <h3 className="text-white font-semibold">Legal</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a
+                <Link
                   href="/privacy-policy"
                   className="hover:text-white transition"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/terms-of-service"
                   className="hover:text-white transition"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/security" className="hover:text-white transition">
+                <Link href="/security" className="hover:text-white transition">
                   Security
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
